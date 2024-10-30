@@ -5,11 +5,32 @@
     <!-- character set -->
 <title>Test site</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
+    
+    .corners {
+        --s: 25px; /* the size on the corner */
+  --t: 5px;  /* the thickness of the border */
+  --g: -2px; /* the gap between the border and image */
+  background-color: antiquewhite; 
+  padding: calc(var(--g) + var(--t));
+  outline: var(--t) solid black; /* the color here */
+  outline-offset: calc(-1*var(--t));
+  -webkit-mask:
+    conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+    0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+        border: 1px solid black;
+        z-index: 0; 
+}    
+</style>
 </head>
 
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eo3ttp-Ihns?si=oehH2guX9XGw-XGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <div class="corners"> <p style="border: 5px solid black; margin: 0; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, assumenda similique ipsum ipsa necessitatibus ex illum nisi vitae asperiores nihil ab, distinctio corrupti vel, magni laboriosam, sed qui perspiciatis magnam aperiam obcaecati atque dignissimos nobis. Quisquam possimus veritatis enim quia pariatur voluptas, ipsum omnis, aliquid minus porro. Reprehenderit nulla, odit.</p></div>
+    <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eo3ttp-Ihns?si=oehH2guX9XGw-XGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <iframe width="560" height="315" 5src="https://www.youtube.com/embed/eo3ttp-Ihns?si=oehH2guX9XGw-XGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p>klik <a href="#test">her</a></p>
 <h1><i>Velkommen til min side</i></h1>
@@ -18,10 +39,10 @@
 <hr>
     <h2>Eksempel</h2>
         <br>
-    <h6>Eksempel</h6>
+<h6>Eksempel</h6>
     <p><b>Hej</b></p>
     
-    <div style="background-color: blue; ">
+<div style="background-color: blue; ">
     <p>Klik <a href="https://github.com/idkn-eadania/2024" target="_blank">her</a></p>
     <p>Klik <a href="d2bc2b03-6d5e-4dc7-806d-319df88d62ac.png">her</a></p>
     
