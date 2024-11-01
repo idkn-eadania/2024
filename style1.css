@@ -32,9 +32,9 @@
 }
 
 .item1 {
-    /*grid-column: 1/span 2;
-    grid-row: 1/3; */
-    grid-area: 1/1/ 3/3; /*start række/start kolonne / slut række/slut kolonne*/
+    grid-column: 1/span 2;
+    /*grid-row: 1/3; */
+    /*grid-area: 1/1/ 3/3; start række/start kolonne / slut række/slut kolonne*/
 }
 
 
